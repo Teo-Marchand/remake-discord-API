@@ -1,0 +1,57 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/gateway/src",
+  "monorepo": true,
+  "root": "apps/gateway",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/gateway/tsconfig.app.json"
+  },
+  "projects": {
+    "gateway": {
+      "type": "application",
+      "root": "apps/gateway",
+      "entryFile": "main",
+      "sourceRoot": "apps/gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/gateway/tsconfig.app.json"
+      }
+    },
+    "users": {
+      "type": "application",
+      "root": "apps/users",
+      "entryFile": "main",
+      "sourceRoot": "apps/users/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/users/tsconfig.app.json"
+      }
+    },
+    "guilds": {
+      "type": "application",
+      "root": "apps/guilds",
+      "entryFile": "main",
+      "sourceRoot": "apps/guilds/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/guilds/tsconfig.app.json"
+      }
+    },
+    "channels": {
+      "type": "application",
+      "root": "apps/channels",
+      "entryFile": "main",
+      "sourceRoot": "apps/channels/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/channels/tsconfig.app.json"
+      }
+    },
+    "invites": {
+      "type": "application",
+      "root": "apps/invites",
+      "entryFile": "main",
+      "sourceRoot": "apps/invites/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/invites/tsconfig.app.json"
+      }
+    }
+  }
+}
